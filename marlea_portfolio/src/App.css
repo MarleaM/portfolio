@@ -1,42 +1,84 @@
-#root {
-  max-width: 1280px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* not sure what this is for tbh
+html, body {
+  height: 100%;
+  width: 100%;
+}*/
+
+/*** HERO ***/
+.hero{
+  display:flex;
+  min-height:100vh;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.2);
+}
+
+.hero_content{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between; /*maybe change to center later*/
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  text-align: right;
+  color: white;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.hero_left_content {
+  width: 50%;
+  display: flex;
+  justify-content: center; /*center vertically*/
+  align-items: center; /*center horiztionatly*/
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hero_left_content img {
+  width: 75%;
+  height: 75%;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.hero_right_content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: right;
+  padding-right: 3%;
 }
 
-.card {
-  padding: 2em;
+.hero_content h1{
+  font-size: 56px;
+  font-weight: bolder;
 }
 
-.read-the-docs {
-  color: #888;
+.hero_content p{
+  font-size: 20px;
+  margin: 15px 0;
+  max-width: 550px;
+  letter-spacing: 2px;
+  align-items: right;
+  padding: 10px 10px;
+}
+
+.hero_content a{
+  color:inherit;
+  text-decoration: none;
+  background-color: #cf835f;
+  padding: 12px 24px;
+  font-size: 20px;
+  border-radius: 150px;
+  transition: 0.3s ease;
+}
+
+.hero_content a:hover {
+  background-color: white;
+  color: #cf835f;
 }
