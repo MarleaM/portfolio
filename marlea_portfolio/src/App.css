@@ -10,7 +10,19 @@ html, body {
   width: 100%;
 }*/
 
-/*** HERO ***/
+/* KEYFRAMES */
+@keyframes fade-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/**************** HERO ****************/
 .hero{
   display:flex;
   min-height:100vh;
@@ -18,7 +30,9 @@ html, body {
   box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.2);
 }
 
+
 .hero_content{
+  animation: fade-down .75s;
   display:flex;
   flex-direction: row;
   justify-content: space-between; /*maybe change to center later*/
@@ -71,7 +85,7 @@ html, body {
 .hero_content a{
   color:inherit;
   text-decoration: none;
-  background-color: #cf835f;
+  background-color: #719b64;
   padding: 12px 24px;
   font-size: 20px;
   border-radius: 150px;
@@ -80,5 +94,24 @@ html, body {
 
 .hero_content a:hover {
   background-color: white;
-  color: #cf835f;
+  color: #8DAF83;
+}
+
+/****************  body 1 ****************/
+
+.links {
+  min-height:50vh;
+  background-size: cover;
+}
+
+.links_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links_box {
+  background-color: #719b64;
+  padding: 20px 20px;
 }
