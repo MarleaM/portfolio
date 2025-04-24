@@ -102,16 +102,56 @@ html, body {
 .links {
   min-height:50vh;
   background-size: cover;
+  background-color: #f1faec;
+}
+
+.links_title{
+  padding-top: 10px;
+  text-align: center;
+  font-size: xx-large;
+  color: #719b64;
 }
 
 .links_content {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  padding: 40px;
+  gap: 90px;
 }
 
 .links_box {
   background-color: #719b64;
+  border-radius: 10px;
   padding: 20px 20px;
+  flex: 0 0 auto;
+  width: 300px;
+  height: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.links_box_text{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.links_box_p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.icon {
+  font-size: 5em;
+  color: white;
+}
+
+.links_content a{
+  color: white;
+  text-decoration: none;
 }

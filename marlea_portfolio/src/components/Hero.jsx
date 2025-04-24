@@ -1,6 +1,7 @@
 import React from 'react';
 import background from '../assets/home-bg.jpg';
 import pfp from '../assets/pfp.jpg';
+
 const Hero = () => {
     return(
         <section className = "hero" style = {{backgroundImage: `url(${background})`}}>

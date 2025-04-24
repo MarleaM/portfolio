@@ -1,24 +1,31 @@
 import React from "react";
+import { FaGithub } from 'react-icons/fa';
+import { FaLinkedin } from "react-icons/fa";
+import { IoDocumentAttach } from "react-icons/io5";
 
 const Links = () => {
 
     return (
         <section>
             <div className = "links"> 
+                <h1 className = "links_title">Some Helpful Links</h1>
                 <div className = "links_content">
                     <a href = "a" className = "links_box">
-                        <h1>GitHub</h1>
-                        <p>Check out my public projects</p>
+                        <h1 className = "links_box_text">GitHub</h1>
+                        <FaGithub className = "icon"/>
+                        <p className = "links_box_p">Check out my public projects</p>
 
                     </a>
                     <a href = "a"className = "links_box">
-                        <h1>LinkedIn</h1>
-                        <p>Connect with me</p>
+                        <h1 className = "links_box_text">LinkedIn</h1>
+                        <FaLinkedin className = "icon"/>
+                        <p className = "links_box_p">Connect with me</p>
 
                     </a>
                     <a href = "a" className = "links_box">
-                        <h1>Resume</h1>
-                        <p>Download or view my resume</p>
+                        <h1 className = "links_box_text">Resume</h1>
+                        <IoDocumentAttach className = "icon"/>
+                        <p className = "links_box_p">Download or view my resume</p>
                     </a>
                 </div>
             </div>
