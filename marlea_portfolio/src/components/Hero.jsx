@@ -1,5 +1,6 @@
 import React from 'react';
 import background from '../assets/home-bg.jpg';
+import background2 from '../assets/home-bg-2.jpeg';
 import pfp from '../assets/pfp.jpg';
 
 const Hero = () => {

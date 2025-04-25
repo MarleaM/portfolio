@@ -22,6 +22,13 @@ html, body {
   }
 }
 
+@keyframes slide_up {
+  100% {
+    transform: translateY(-10px);
+  }
+  
+}
+
 /**************** HERO ****************/
 .hero{
   display:flex;
@@ -102,14 +109,14 @@ html, body {
 .links {
   min-height:50vh;
   background-size: cover;
-  background-color: #f1faec;
+  background-color: #ad6d2e30;
 }
 
 .links_title{
   padding-top: 10px;
   text-align: center;
   font-size: xx-large;
-  color: #719b64;
+  color: #ad6d2e;
 }
 
 .links_content {
@@ -123,7 +130,7 @@ html, body {
 }
 
 .links_box {
-  background-color: #719b64;
+  background-color: #f1faec;
   border-radius: 10px;
   padding: 20px 20px;
   flex: 0 0 auto;
@@ -134,6 +141,17 @@ html, body {
   align-items: center;
   justify-content: center;
   text-align: center;
+  transition: 0.3s ease, transform 0.5s ease;
+}
+
+.links_box:hover{
+  background-color: #49361C;
+  color:#719b64;
+  transform: translateY(-10px);
+}
+
+.links_box:hover .icon {
+  color:#719b64;
 }
 
 .links_box_text{
