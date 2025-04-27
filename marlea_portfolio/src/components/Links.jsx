@@ -6,7 +6,7 @@ import { IoDocumentAttach } from "react-icons/io5";
 const Links = () => {
 
     return (
-        <section>
+        <section className = "links_section" id = "links">
             <div className = "links"> 
                 <h1 className = "links_title">Some Helpful Links</h1>
                 <div className = "links_content">

@@ -4,6 +4,20 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*
+COLOR PALLETTE: 
+
+#363937 - darkest
+#90A1B7 - medium
+#A6B8CC - medium - light
+#BFCEDE - light blue
+
+*/
 /* not sure what this is for tbh
 html, body {
   height: 100%;
@@ -27,6 +41,17 @@ html, body {
     transform: translateY(-10px);
   }
   
+}
+
+@keyframes scrolls {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+  }
+  100% { 
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
 }
 
 /**************** HERO ****************/
@@ -63,6 +88,7 @@ html, body {
   height: 75%;
   border-radius: 50%;
   object-fit: cover;
+  box-shadow: 0 0 25px #a1bcc8;
 }
 
 .hero_right_content {
@@ -76,7 +102,7 @@ html, body {
 }
 
 .hero_content h1{
-  font-size: 56px;
+  font-size: 49px;
   font-weight: bolder;
 }
 
@@ -92,7 +118,7 @@ html, body {
 .hero_content a{
   color:inherit;
   text-decoration: none;
-  background-color: #719b64;
+  background-color: #363937;
   padding: 12px 24px;
   font-size: 20px;
   border-radius: 150px;
@@ -100,23 +126,30 @@ html, body {
 }
 
 .hero_content a:hover {
-  background-color: white;
-  color: #8DAF83;
+  background-color: #BFCEDE;
+  color: #363937;
 }
+
 
 /****************  body 1 ****************/
 
-.links {
+.links_section {
   min-height:50vh;
   background-size: cover;
-  background-color: #ad6d2e30;
+  background-color: #BFCEDE;
+}
+
+.links {
+  animation: scrolls 5s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
 }
 
 .links_title{
   padding-top: 10px;
   text-align: center;
   font-size: xx-large;
-  color: #ad6d2e;
+  color: #363937;
 }
 
 .links_content {
@@ -130,7 +163,7 @@ html, body {
 }
 
 .links_box {
-  background-color: #f1faec;
+  background-color: #90A1B7;
   border-radius: 10px;
   padding: 20px 20px;
   flex: 0 0 auto;
@@ -145,13 +178,13 @@ html, body {
 }
 
 .links_box:hover{
-  background-color: #49361C;
-  color:#719b64;
+  background-color: #363937;
+  color:#A6B8CC;
   transform: translateY(-10px);
 }
 
 .links_box:hover .icon {
-  color:#719b64;
+  color:#A6B8CC;
 }
 
 .links_box_text{
